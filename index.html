@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="w-full h-screen flex items-center justify-center bg-gradient-to-r from-slate-500/50 to-gray-500/50 h-64">
+    <div class="height  flex flex-col items-center justify-center p-8 rounded-xl bg-slate-950 text-white card">
+        <div class="w-56 h-56  mb-5 "> <img src="" alt="" class="w-full h-full mainImg"></div>
+        <h1 class="text-3xl font-bold username">Asad Abbas</h1>
+        <p class="text-2xl mb-2 description">Frontend developegggr</p>
+        <input type="text" class="w-full border border-gray-300 rounded p-2 mb-4 color input" placeholder="Enter link here">
+         <div class="flex space-x-2">
+            <button class="bg-blue-500 p-3 rounded hover:bg-sky-700 changeName">Change Name</button>
+            <button class="bg-green-500 p-3 rounded hover:bg-green-700 changeDescription">Change Description</button>
+            <button class="bg-green-500 p-3 rounded hover:bg-green-700 changeImg">Change Image</button>
+          </div>
+          <div><button class=" mt-5 bg-green-500 p-3 rounded hover:bg-green-700 bgColorBtn">Change Background </button>
+            <button class="px-6 mt-2 bg-green-500 p-3 rounded hover:bg-green-700 resetBtn">Reset</button></div>
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
